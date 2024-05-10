@@ -1,0 +1,28 @@
+{
+  "name": "rss-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start:dev": "nodemon main.ts --ignore cache.json",
+    "start:prod": "node main.js --ignore cache.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.8",
+    "axios": "^1.6.8",
+    "chalk": "4.1.2",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.22.4",
+    "iconv-lite": "^0.6.3",
+    "rss-parser": "^3.13.0",
+    "striptags": "^3.2.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "cache.json"
+    ]
+  }
+}
